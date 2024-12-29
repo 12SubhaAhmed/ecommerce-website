@@ -1,15 +1,16 @@
 "use client";
 import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
+//import { useRouter } from "next/navigation";
 import { Products } from "@/pages/types";
 import ProductCard from "./Card";
+import Image from "next/image";
 
 const Home = () => {
   const [products, setProducts] = useState<Products[]>([]);
   const [cart, setCart] = useState<Products[]>([]);
   const [showCart, setShowCart] = useState(false);
   const [isCheckOut, setIsCheckOut] = useState(false);
-  const router = useRouter();
+  //const router = useRouter();
 
   // Fetching products and loading cart from localStorage
   useEffect(() => {
@@ -102,7 +103,7 @@ const Home = () => {
                         key={index}
                         className="flex items-center justify-center mb-6 transform transition-all duration-300 ease-in-out"
                       >
-                        <img
+                        <Image
                           src={product.image}
                           alt={product.name}
                           className="w-20 h-20 sm:w-24 inline-block transition-transform duration-300 ease-in-out transform hover:text-black"

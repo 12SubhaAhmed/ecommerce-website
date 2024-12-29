@@ -2,6 +2,7 @@ import { CiCoffeeCup } from "react-icons/ci";
 import { IoSearch } from "react-icons/io5";
 import { FaBolt } from "react-icons/fa";
 import { TiShoppingCart } from "react-icons/ti";
+import Image from "next/image";
 
 
 export default function Navbar() {
@@ -34,7 +35,7 @@ export default function Navbar() {
                     <span className="text-white"> 15 minutes</span>
                   </p>
                   <TiShoppingCart className="inline-block w-8 h-8 rounded-full ring-2 relative hover:ring-white cursor-pointer text-gray-600"/>
-                  <img src="/images/pic.jpg" alt="user avatar" className="inline-block w-8 h-8 rounded-full ring-2 hover:ring-white"/>
+                  <Image src="/images/pic.jpg" alt="user avatar" className="inline-block w-8 h-8 rounded-full ring-2 hover:ring-white"/>
                 </div>
               </div>
             </div>

@@ -1,3 +1,5 @@
+import Image from "next/image"; 
+
 const products = [
   {
     id: 1,
@@ -69,7 +71,7 @@ export default function Product() {
                   opacity: 0.2
                 }}
               ></div>
-              <img
+              <Image
                 className="relative w-40 h-40"
                 src={product.imageUrl}
                 alt={product.title}
