@@ -107,6 +107,8 @@ const Home = () => {
                           src={product.image}
                           alt={product.name}
                           className="w-20 h-20 sm:w-24 inline-block transition-transform duration-300 ease-in-out transform hover:text-black"
+                          height={300}
+                          width={300}
                         />
                         <span className="ml-4 text-lg font-medium text-slate-600">
                           {product.name} - ${product.price}

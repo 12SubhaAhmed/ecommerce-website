@@ -7,7 +7,7 @@ const products = [
     category: "fixing",
     price: "200.00",
     imageUrl:
-      "https://www.keep-calm-and-eat-ice-cream.com/wp-content/uploads/2022/08/Banana-milkshake-hero-13.jpg",
+      "/images/Banana.jpg",
     bgColor: "bg-amber-500",
   },
   {
@@ -16,7 +16,7 @@ const products = [
     category: "fixing",
     price: "200.00",
     imageUrl:
-      "https://breadsandsweets.com/wp-content/uploads/2022/07/chocolate-milkshake-blog-1-of-1.jpg",
+      "/images/chocolate.jpg",
     bgColor: "bg-teal-500",
   },
   {
@@ -25,7 +25,7 @@ const products = [
     category: "fixing",
     price: "200.00",
     imageUrl:
-      "https://www.thehungrybites.com/wp-content/uploads/2023/06/Strawberry-milkshake-frappuccino-featured.jpg",
+      "/images/Strawberry.jpg",
     bgColor: "bg-amber-500",
   },
 ];
@@ -75,6 +75,8 @@ export default function Product() {
                 className="relative w-40 h-40"
                 src={product.imageUrl}
                 alt={product.title}
+                height={300}
+               width={300}
               />
             </div>
 

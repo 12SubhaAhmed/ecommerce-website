@@ -35,7 +35,11 @@ export default function Navbar() {
                     <span className="text-white"> 15 minutes</span>
                   </p>
                   <TiShoppingCart className="inline-block w-8 h-8 rounded-full ring-2 relative hover:ring-white cursor-pointer text-gray-600"/>
-                  <Image src="/images/pic.jpg" alt="user avatar" className="inline-block w-8 h-8 rounded-full ring-2 hover:ring-white"/>
+                  <Image src="/images/pic.jpg" 
+                  alt="user avatar" 
+                  className="inline-block w-8 h-8 rounded-full ring-2 hover:ring-white"
+                  width={300}
+                  height={300}/>
                 </div>
               </div>
             </div>
